@@ -8,10 +8,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Yes No App',
+      title: 'Yes No App modificacion user matcopDev',
       debugShowCheckedModeBanner: false,
-      theme:AppTheme(selectedColor: 3).theme(
-      ),
+      theme: AppTheme(selectedColor: 3).theme(),
       home: ChatScreen(),
       // home: Scaffold(
       //   appBar: AppBar(
