@@ -16,7 +16,7 @@ class MyMessageBuble extends StatelessWidget {
           ),
           child: const Padding(
             padding: EdgeInsets.symmetric(vertical: 10,horizontal: 20),
-            child: Text('Te comento que me compre un Golden Retriver',style: TextStyle(color: Colors.white54),),
+            child: Text('Te comento que actualice desde la laptop',style: TextStyle(color: Colors.white54),),
           ),
         ),
         const SizedBox(height: 7,),

@@ -46,7 +46,7 @@ class _ImageBubble extends StatelessWidget {
           'https://yesno.wtf/assets/no/21-05540164de4e3229609f106e468fa8e7.gif',
           width: size.width * 0.7,
           height: 150,
-          fit: BoxFit.cover,
+          fit: BoxFit.cover ,
         ));
   }
 }
