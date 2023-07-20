@@ -17,7 +17,7 @@ class HerMessageBuble extends StatelessWidget {
           child: const Padding(
             padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
             child: Text(
-              'es una linda raza Golden Retriver',
+              'es una linda raza Golden Retriver 22da. ',
               style: TextStyle(color: Colors.white54),
             ),
           ),
@@ -46,7 +46,17 @@ class _ImageBubble extends StatelessWidget {
           'https://yesno.wtf/assets/no/21-05540164de4e3229609f106e468fa8e7.gif',
           width: size.width * 0.7,
           height: 150,
-          fit: BoxFit.cover ,
+          fit: BoxFit.cover,
+          loadingBuilder: (context, child, loadingProgress) {
+            if (loadingProgress == null) return child;
+
+            return Container(
+              width: size.width * 0.7,
+              height: 150,
+              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+              child: const Text("su contacto esta escribiendo..."),
+            );
+          },
         ));
   }
 }

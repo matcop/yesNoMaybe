@@ -10,18 +10,22 @@ class MyMessageBuble extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.end,
       children: [
         Container(
-          decoration:  BoxDecoration(
+          decoration: BoxDecoration(
             color: colors.primary,
             borderRadius: BorderRadius.circular(15.0),
           ),
           child: const Padding(
-            padding: EdgeInsets.symmetric(vertical: 10,horizontal: 20),
-            child: Text('Te comento que actualice desde la laptop 2da version',style: TextStyle(color: Colors.white54),),
+            padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+            child: Text(
+              'Te comento que actualice desde la laptop 2da versiones',
+              style: TextStyle(color: Colors.white54),
+            ),
           ),
         ),
-        const SizedBox(height: 7,),
+        const SizedBox(
+          height: 7,
+        ),
       ],
     );
-    
   }
 }
