@@ -10,8 +10,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Yes No App modificacion user matcopDev',
       debugShowCheckedModeBanner: false,
-      theme: AppTheme(selectedColor: 3).theme(),
-      home: ChatScreen(),
+      theme: AppTheme(selectedColor: 2).theme(),
+      home: const ChatScreen(),
       // home: Scaffold(
       //   appBar: AppBar(
       //     title: Text('Material App Bar'),
