@@ -8,7 +8,8 @@ class ChatProvider extends ChangeNotifier {
   ];
 
   Future<void> sendMessage(String text) async {
-    // TODO: IMPLEMENTAR METODO CUANDO YO ESCRIBA EN EL TEXTBOX DEBO RECIBIR
-    // LAS VARIABLES COMO EL MENSAJE, LA URL_IMAGEN, Y DATO DE QUIEN ENVIA.
+    final newMessage= Message(text: text, fromWho: FromWho.me);
+    messageList.add(newMessage);
+    notifyListeners();//le decimos que algo del provider cambio
   }
 }
