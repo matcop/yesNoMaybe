@@ -43,6 +43,7 @@ class _ChatView extends StatelessWidget {
           children: [
             Expanded(
                 child: ListView.builder(
+                  controller: chatProvider.chatScrollController,
                     itemCount: chatProvider.messageList.length,
                     itemBuilder: (context, index) {
                       // return const MyMessageBuble();
@@ -51,7 +52,7 @@ class _ChatView extends StatelessWidget {
 
 
                       return (message.fromWho==FromWho.hers)
-                      ?HerMessageBuble()
+                      ?HerMessageBuble(message:message)
                       :MyMessageBuble(message:message);
                           
                     })),

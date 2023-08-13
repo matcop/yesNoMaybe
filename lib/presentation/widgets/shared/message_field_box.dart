@@ -11,15 +11,15 @@ class MessageFieldBox extends StatelessWidget {
   Widget build(BuildContext context) {
     // final colors = Theme.of(context).colorScheme;
     final textController = TextEditingController();
-    final OutlineInputBorder = UnderlineInputBorder(
+    final outlineInputBorder = UnderlineInputBorder(
         borderSide: const BorderSide(color: Colors.transparent),
         borderRadius: BorderRadius.circular(40));
 
     final focusNode = FocusNode();
 
     final inputDecoration = InputDecoration(
-        enabledBorder: OutlineInputBorder,
-        focusedBorder: OutlineInputBorder,
+        enabledBorder: outlineInputBorder,
+        focusedBorder: outlineInputBorder,
         filled: true,
         suffixIcon: IconButton(
           onPressed: () {
